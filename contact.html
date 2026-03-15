@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | LilPetal Crafts</title>
+  <meta name="description" content="Contact LilPetal Crafts. Call or WhatsApp Pooja for beautiful handmade gifts.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    .contact-section {
+      padding: 12rem 0 6rem 0;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+    @media (min-width: 992px) {
+      .contact-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .contact-info-card {
+      background: var(--color-surface);
+      padding: 4rem 3rem;
+      border-radius: 40px;
+      height: 100%;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: var(--shadow-sm);
+    }
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .contact-info-icon {
+      width: 60px; height: 60px;
+      color: var(--color-text-dark);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 50%;
+    }
+    .contact-info-text h4 {
+      margin-bottom: 0.5rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .contact-info-text p {
+      color: var(--color-text-medium);
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+    .contact-form {
+      background: var(--color-surface);
+      padding: 4rem 3rem;
+      border-radius: 40px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .form-group { margin-bottom: 2rem; }
+    .form-label { display: block; margin-bottom: 0.8rem; font-weight: 500; font-size: 0.95rem; }
+    .form-control {
+      width: 100%; padding: 1rem 1.2rem;
+      border: 1px solid #dcdcdc; border-radius: var(--border-radius-sm);
+      font-family: var(--font-body); font-size: 1rem;
+      background: var(--color-background);
+      transition: border var(--transition-fast);
+    }
+    .form-control:focus { outline: none; border-color: var(--color-text-dark); }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i data-lucide="flower-2" class="logo-icon"></i> LilPetal Crafts
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="custom-orders.html" class="nav-link">Custom Orders</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:9778095206" class="btn btn-outline">Call</a>
+        <a href="https://wa.me/9778095206" class="btn btn-primary">WhatsApp</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle Navigation"><i data-lucide="menu"></i></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="custom-orders.html">Custom Orders</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 5rem;">
+        <h1 class="section-title reveal" style="font-size: 4.5rem;">Get in Touch</h1>
+        <p class="hero-subtitle mx-auto reveal delay-1" style="font-weight: 300;">Have a question or looking to place a bulk order? We would love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <div class="contact-info-card reveal">
+          <h3 class="section-title" style="font-size: 2.5rem; margin-bottom: 3rem;">Contact Details</h3>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i data-lucide="user"></i></div>
+            <div class="contact-info-text">
+              <h4>Owner</h4>
+              <p>Pooja</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i data-lucide="phone"></i></div>
+            <div class="contact-info-text">
+              <h4>Phone</h4>
+              <p><strong>9778095206</strong></p>
+              <div style="margin-top: 1rem; display: flex; gap: 0.5rem;">
+                <a href="tel:9778095206" class="btn btn-outline" style="padding: 0.6rem 1.2rem; font-size: 0.75rem;">Call</a>
+                <a href="https://wa.me/9778095206" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.75rem;">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i data-lucide="instagram"></i></div>
+            <div class="contact-info-text">
+              <h4>Instagram</h4>
+              <p><a href="https://instagram.com/lilpetal_crafts" target="_blank" style="font-weight: 600; text-decoration: underline;">@lilpetal_crafts</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal delay-1">
+          <h3 class="section-title" style="font-size: 2.5rem; margin-bottom: 3rem;">Send an Enquiry</h3>
+          <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent!');">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" style="min-height: 150px;" required></textarea>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem;">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo"><i data-lucide="flower-2"></i> LilPetal</a>
+          <p class="footer-desc">Handmade gifts, bouquets, and hampers crafted with love by Pooja. Perfect for any occasion.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact Us</h4>
+          <div class="footer-contact">
+            <p><i data-lucide="phone" size="18"></i> 9778095206</p>
+            <p><i data-lucide="instagram" size="18"></i> @lilpetal_crafts</p>
+            <p><i data-lucide="map-pin" size="18"></i> Local Store Delivery</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 LilPetal Crafts. All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <div class="floating-ctas">
+    <a href="https://wa.me/9778095206" class="float-btn float-whatsapp"><i data-lucide="message-circle" fill="currentColor"></i></a>
+    <a href="tel:9778095206" class="float-btn float-call"><i data-lucide="phone" fill="currentColor"></i></a>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

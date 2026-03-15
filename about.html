@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | LilPetal Crafts</title>
+  <meta name="description" content="The story of LilPetal Crafts, started by Pooja to create beautiful handmade gifts.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="C:\Users\USER\antigrav\lilpetal\assets\images\hand-made-process.jpg"></script>
+
+  <style>
+    .about-hero {
+      padding: 12rem 0 6rem 0;
+    }
+
+    .about-img {
+      width: 100%;
+    }
+
+    .story-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 6rem;
+      align-items: center;
+      margin-bottom: 8rem;
+    }
+
+    @media (min-width: 992px) {
+      .story-section {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .mission-box {
+      background: var(--color-surface);
+      padding: 5rem 3rem;
+      border-radius: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i data-lucide="flower-2" class="logo-icon"></i> LilPetal Crafts
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="custom-orders.html" class="nav-link">Custom Orders</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:9778095206" class="btn btn-outline">Call</a>
+        <a href="https://wa.me/9778095206" class="btn btn-primary">WhatsApp</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle Navigation"><i data-lucide="menu"></i></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="custom-orders.html">Custom Orders</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <section class="about-hero">
+    <div class="container reveal text-center">
+      <h1 class="page-title" style="font-size: 5rem; margin-bottom: 1.5rem;">Our Story</h1>
+      <p
+        style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: var(--color-text-medium); font-weight: 300;">
+        Crafting memories, one gift at a time.</p>
+    </div>
+  </section>
+
+  <section class="section-padding" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="story-section">
+        <div class="reveal" style="transform: rotate(-3deg);">
+          <div class="polaroid">
+            <img src="assets/images/hand-made-process.jpg"
+              alt="Handmade process" class="about-img">
+          </div>
+        </div>
+        <div class="reveal delay-1">
+          <h2 class="section-title" style="margin-bottom: 2rem; font-size: 3.5rem;">Meet Pooja</h2>
+          <p style="font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 300;">LilPetal Crafts was started by Pooja
+            with a profound passion for creating beautiful handmade gifts. What began as a small hobby of making gifts
+            for friends and family quickly blossomed into a local brand dedicated to making every occasion special.</p>
+          <p style="font-size: 1.1rem; margin-bottom: 3rem; font-weight: 300;">"Every bouquet and hamper is crafted
+            carefully to make your special moments unforgettable. I believe that a gift should not just be an item, but
+            a feeling—a memory wrapped in love."</p>
+
+          <ul style="display: flex; flex-direction: column; gap: 1rem; font-weight: 300;">
+            <li style="display: flex; gap: 1rem;"><i data-lucide="check-circle" size="20"></i> 100% Handmade with
+              precision</li>
+            <li style="display: flex; gap: 1rem;"><i data-lucide="check-circle" size="20"></i> Sustainably packaged</li>
+            <li style="display: flex; gap: 1rem;"><i data-lucide="check-circle" size="20"></i> Tailored for all local
+              events</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mission-box reveal">
+        <i data-lucide="heart" size="40" style="margin-bottom: 2rem; color: var(--color-text-dark);"></i>
+        <h2 class="section-title" style="font-size: 4rem; margin-bottom: 1.5rem;">Our Mission</h2>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; font-weight: 300; line-height: 1.8;">To sprinkle
+          joy and warmth into the lives of our neighbors through premium, handcrafted gifts that speak the language of
+          love louder than words ever could. Whether it's a forgotten anniversary or a meticulous proposal, we've got
+          you covered.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo"><i data-lucide="flower-2"></i> LilPetal</a>
+          <p class="footer-desc">Handmade gifts, bouquets, and hampers crafted with love by Pooja. Perfect for any
+            occasion.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact Us</h4>
+          <div class="footer-contact">
+            <p><i data-lucide="phone" size="18"></i> 9778095206</p>
+            <p><i data-lucide="instagram" size="18"></i> @lilpetal_crafts</p>
+            <p><i data-lucide="map-pin" size="18"></i> Local Store Delivery</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LilPetal Crafts. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-ctas">
+    <a href="https://wa.me/9778095206" class="float-btn float-whatsapp"><i data-lucide="message-circle"
+        fill="currentColor"></i></a>
+    <a href="tel:9778095206" class="float-btn float-call"><i data-lucide="phone" fill="currentColor"></i></a>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

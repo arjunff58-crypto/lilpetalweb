@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products | LilPetal Crafts</title>
+  <meta name="description" content="Browse our gallery of handmade bouquets, hampers, chocolates and candles.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    .page-hero {
+      padding: 12rem 0 6rem 0;
+      text-align: center;
+    }
+
+    .page-title {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .category-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 5rem;
+    }
+
+    .category-nav .btn {
+      padding: 0.6rem 1.5rem;
+      font-size: 0.8rem;
+    }
+
+    .category-nav .btn.active {
+      background-color: var(--color-text-dark);
+      color: var(--color-surface);
+    }
+
+    .product-grid-gallery {
+      margin-bottom: 8rem;
+    }
+
+    .gallery-heading {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i data-lucide="flower-2" class="logo-icon"></i> LilPetal Crafts
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="custom-orders.html" class="nav-link">Custom Orders</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:9778095206" class="btn btn-outline">Call</a>
+        <a href="https://wa.me/9778095206" class="btn btn-primary">WhatsApp</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle Navigation"><i data-lucide="menu"></i></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="custom-orders.html">Custom Orders</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container reveal">
+      <h1 class="page-title">Our Collections</h1>
+      <p class="hero-subtitle mx-auto">Handcrafted with premium materials and absolute love.</p>
+    </div>
+  </section>
+
+  <section class="section-padding" style="padding-top: 0;">
+    <div class="container">
+
+      <div class="category-nav reveal delay-1">
+        <a href="#bouquets" class="btn btn-outline active">Bouquets</a>
+        <a href="#hampers" class="btn btn-outline">Gift Hampers</a>
+        <a href="#chocolates" class="btn btn-outline">Chocolates</a>
+        <a href="#candles" class="btn btn-outline">Candles</a>
+        <a href="custom-orders.html" class="btn btn-accent">Custom Gifts</a>
+      </div>
+
+      <!-- BOUQUETS -->
+      <div id="bouquets" class="product-grid-gallery">
+        <h2 class="gallery-heading reveal">Handmade Bouquets</h2>
+        <div class="products-grid">
+          <div class="product-card reveal">
+            <div class="product-img-wrapper polaroid"><img
+                src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&q=80&w=500"
+                alt="Classic Rose Bouquet"></div>
+            <div class="product-info">
+              <h3 class="product-title">Classic Rose Bouquet</h3>
+              <div class="product-actions"><a
+                  href="https://wa.me/9778095206?text=I'm%20interested%20in%20the%20Classic%20Rose%20Bouquet"
+                  class="btn btn-primary">Enquire</a></div>
+            </div>
+          </div>
+          <div class="product-card reveal delay-1">
+            <div class="product-img-wrapper polaroid"><img
+                src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&q=80&w=500"
+                alt="Scented Rose Bouquet"></div>
+            <div class="product-info">
+              <h3 class="product-title">Scented Rose Bouquet</h3>
+              <div class="product-actions"><a
+                  href="https://wa.me/9778095206?text=I'm%20interested%20in%20the%20Scented%20Rose%20Bouquet"
+                  class="btn btn-primary">Enquire</a></div>
+            </div>
+          </div>
+          <div class="product-card reveal delay-2">
+            <div class="product-img-wrapper polaroid"><img
+                src="assets/images/Ribbon-Rose-Bouquet.jpg" alt="Ribbon Rose Bouquet">
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Ribbon Rose Bouquet</h3>
+              <div class="product-actions"><a
+                  href="https://wa.me/9778095206?text=I'm%20interested%20in%20the%20Ribbon%20Rose%20Bouquet"
+                  class="btn btn-primary">Enquire</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHOCOLATES BOUQUETS -->
+      <div id="chocolates Bouquet" class="product-grid-gallery">
+        <h2 class="gallery-heading reveal">Chocolates</h2>
+        <div class="products-grid">
+          <div class="product-card reveal">
+            <div class="product-img-wrapper polaroid"><img
+                src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&q=80&w=500"
+                alt="Chocolate Hamper"></div>
+            <div class="product-info">
+              <h3 class="product-title">Chocolate Hamper</h3>
+              <div class="product-actions"><a
+                  href="https://wa.me/9778095206?text=I'm%20interested%20in%20the%20Chocolate%20Hamper"
+                  class="btn btn-primary">Enquire</a></div>
+            </div>
+          </div>
+          <div class="product-card reveal delay-1">
+            <div class="product-img-wrapper polaroid"><img
+                src="assets/images/premium-chocolate-hamper.jpg"
+                alt="Premium Chocolate Hamper"></div>
+            <div class="product-info">
+              <h3 class="product-title">Premium Chocolate Hamper</h3>
+              <div class="product-actions"><a
+                  href="https://wa.me/9778095206?text=I'm%20interested%20in%20the%20Premium%20Chocolate%20Hamper"
+                  class="btn btn-primary">Enquire</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CANDLES -->
+      <div id="candles" class="product-grid-gallery">
+        <h2 class="gallery-heading reveal">Candles</h2>
+        <div class="products-grid">
+          <div class="product-card reveal">
+            <div class="product-img-wrapper polaroid"><img
+                src="assets/images/Lavender-Dream.jpg" alt="Lavender Candle"></div>
+            <div class="product-info">
+              <h3 class="product-title">Lavender Dream</h3>
+              <div class="product-actions"><a
+                  href="https://wa.me/9778095206?text=I'm%20interested%20in%20the%20Lavender%20Dream"
+                  class="btn btn-primary">Enquire</a></div>
+            </div>
+          </div>
+          <div class="product-card reveal delay-1">
+            <div class="product-img-wrapper polaroid"><img
+                src="assets/images/vanilla-bean.jpg" alt="Vanilla Bean Candle"></div>
+            <div class="product-info">
+              <h3 class="product-title">Vanilla Bean</h3>
+              <div class="product-actions"><a
+                  href="https://wa.me/9778095206?text=I'm%20interested%20in%20the%20Vanilla%20Bean"
+                  class="btn btn-primary">Enquire</a></div>
+            </div>
+          </div>
+          <div class="product-card reveal delay-2">
+            <div class="product-img-wrapper polaroid"><img
+                src="assets/images/Rose-Petal.jpg" alt="Rose Petal Candle"></div>
+            <div class="product-info">
+              <h3 class="product-title">Rose Petal</h3>
+              <div class="product-actions"><a
+                  href="https://wa.me/9778095206?text=I'm%20interested%20in%20the%20Rose%20Petal"
+                  class="btn btn-primary">Enquire</a></div>
+            </div>
+          </div>
+          <div class="product-card reveal delay-3">
+            <div class="product-img-wrapper polaroid"><img
+                src="assets/images/Ocean-Breeze.jpg" alt="Ocean Breeze Candle"></div>
+            <div class="product-info">
+              <h3 class="product-title">Ocean Breeze</h3>
+              <div class="product-actions"><a
+                  href="https://wa.me/9778095206?text=I'm%20interested%20in%20the%20Ocean%20Breeze"
+                  class="btn btn-primary">Enquire</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="cta-title">Don't see what you're looking for?</h2>
+        <p class="cta-subtitle">We can curate a beautiful custom gift box entirely to your liking.</p>
+        <div class="cta-btns">
+          <a href="custom-orders.html" class="btn btn-accent">Request Custom Gift</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo"><i data-lucide="flower-2"></i> LilPetal</a>
+          <p class="footer-desc">Handmade gifts, bouquets, and hampers crafted with love by Pooja. Perfect for any
+            occasion.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact Us</h4>
+          <div class="footer-contact">
+            <p><i data-lucide="phone" size="18"></i> 9778095206</p>
+            <p><i data-lucide="instagram" size="18"></i> @lilpetal_crafts</p>
+            <p><i data-lucide="map-pin" size="18"></i> Local Store Delivery</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LilPetal Crafts. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-ctas">
+    <a href="https://wa.me/9778095206" class="float-btn float-whatsapp"><i data-lucide="message-circle"
+        fill="currentColor"></i></a>
+    <a href="tel:9778095206" class="float-btn float-call"><i data-lucide="phone" fill="currentColor"></i></a>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

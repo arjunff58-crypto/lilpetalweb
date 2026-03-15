@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Orders | LilPetal Crafts</title>
+  <meta name="description" content="Request a custom handmade gift from LilPetal Crafts. Tell us your requirements and we will curate a beautiful box just for you.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    .form-section {
+      padding: 12rem 0 6rem 0;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--color-surface);
+      padding: 4rem 3rem;
+      border-radius: 40px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .form-group {
+      margin-bottom: 2rem;
+    }
+    .form-label {
+      display: block;
+      margin-bottom: 0.8rem;
+      font-weight: 500;
+      color: var(--color-text-dark);
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+    }
+    .form-control {
+      width: 100%;
+      padding: 1rem 1.2rem;
+      border: 1px solid #dcdcdc;
+      border-radius: var(--border-radius-sm);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      background: var(--color-background);
+      transition: border var(--transition-fast);
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--color-text-dark);
+    }
+    textarea.form-control {
+      resize: vertical;
+      min-height: 150px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i data-lucide="flower-2" class="logo-icon"></i> LilPetal Crafts
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="custom-orders.html" class="nav-link active">Custom Orders</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:9778095206" class="btn btn-outline">Call</a>
+        <a href="https://wa.me/9778095206" class="btn btn-primary">WhatsApp</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle Navigation"><i data-lucide="menu"></i></button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="custom-orders.html">Custom Orders</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <section class="form-section reveal">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 4rem;">
+        <h1 class="section-title" style="font-size: 4.5rem;">Request a Custom Gift</h1>
+        <p class="hero-subtitle mx-auto" style="font-weight: 300;">Tell us what you need and we will make it happen. We specialize in curating personalized aesthetic gifts.</p>
+      </div>
+
+      <div class="form-container">
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Request submitted! Pooja will contact you shortly.');">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="e.g. Rahul Sharma" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" placeholder="+91 9876543210" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Gift Type</label>
+            <select class="form-control" required>
+              <option value="" disabled selected>Select from options</option>
+              <option value="Bouquet">Handmade Bouquet</option>
+              <option value="Hamper">Gift Hamper</option>
+              <option value="Chocolate">Chocolate Box</option>
+              <option value="Candle">Scented Candles</option>
+              <option value="Other">Other Custom Idea</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Occasion</label>
+            <input type="text" class="form-control" placeholder="Birthday, Anniversary, etc." required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message / Requirements</label>
+            <textarea class="form-control" placeholder="Tell us about their favorite colors, chocolates, or any special requests..." required></textarea>
+          </div>
+          <div class="text-center" style="margin-top: 3rem;">
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem;">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo"><i data-lucide="flower-2"></i> LilPetal</a>
+          <p class="footer-desc">Handmade gifts, bouquets, and hampers crafted with love by Pooja. Perfect for any occasion.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Contact Us</h4>
+          <div class="footer-contact">
+            <p><i data-lucide="phone" size="18"></i> 9778095206</p>
+            <p><i data-lucide="instagram" size="18"></i> @lilpetal_crafts</p>
+            <p><i data-lucide="map-pin" size="18"></i> Local Store Delivery</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 LilPetal Crafts. All Rights Reserved.</p></div>
+    </div>
+  </footer>
+
+  <div class="floating-ctas">
+    <a href="https://wa.me/9778095206" class="float-btn float-whatsapp"><i data-lucide="message-circle" fill="currentColor"></i></a>
+    <a href="tel:9778095206" class="float-btn float-call"><i data-lucide="phone" fill="currentColor"></i></a>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
